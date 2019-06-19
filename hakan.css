@@ -37,7 +37,6 @@
     width:42%;
     margin-top:60px;
     margin-bottom:60px;
-    font-family: "Touche Semibold";
     
 }
 div.header-div .text-1 {
@@ -46,14 +45,24 @@ div.header-div .text-1 {
 
 .what-we-do {
     margin-bottom: 20px;
+    font-family: "Touche Bold";
     
+    
+}
+
+.text-1{
+    font-family: "Touche Regular";
+    font-weight:600;
 }
 #p-service {
     margin:20px auto;
     color: rgb(253,155,12); 
-    border-radius: 2px;
+    border: 2px solid rgb(253,155,12); 
+    border-radius: 3px;
+    padding: 4px 3px;
     width:100px;
-    font-family: "Touche Semibold";
+    font-family: "Touche Regular";
+    font-weight:600;
     
 }
 
@@ -138,10 +147,14 @@ div.clearfix p.text-info{
 .font-headline {
     font-family: "Touche Bold";
     font-size: 17px;
+    
 }
+
 .font-text {
-    font-family: "Touche Semibold";
+    font-family: "Touche Regular";
     font-size: 14px;
+    font-weight: 600;
+    
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 575px){
@@ -155,16 +168,19 @@ div.clearfix p.text-info{
 /*ATTENTION PLEASE! Below this warning, Hakan's 2nd page starts!!*/
 /* /////// DELETE THE BORDERS UNNECESSARY !!! //////*/
 .outside-div-1 {
-    border: 1px black solid;
+    /*border: 1px black solid;*/
     width:80%;
     height:auto;
-    margin:auto;
+    margin:0 auto;
     display:flex;
+    justify-content:center;
 }
 
 /* FIRST COLUMN DOWN BELOW */
 .attached-columns-1 {
     /*border: 1px black solid;*/
+    width:40%;
+
 }
 .headline-1 {
     /*border: 1px black solid;*/
@@ -184,7 +200,8 @@ div.headline-1 h4{
 .content-1 {
     /*border: 1px black solid;*/
     color:rgb(85,85,85);
-    font-family: "Touche Semibold";
+    font-family: "Touche Regular";
+    font-weight: 600;
     padding-top:30px;
 }
 
@@ -194,7 +211,16 @@ div.headline-1 h4{
     justify-content:space-between;
     margin-left: 2%;
 }
+
+.btn-div{
+    width:auto;
+    height: auto;
+    margin-right: 17%;
+    margin-left: 30px;
+    
+}
 .column-1-btn {
+    width:40%;
     border: 1px hidden;
     border-radius: 4px;
     background-color:rgb(254,150,2);
@@ -212,7 +238,7 @@ div.headline-1 h4{
     margin-top:1px;
     margin-bottom:1px;
     margin-left: 1px;
-    box-shadow:3px 0 3px rgb(225,134,8);
+    box-shadow:3px 0 2px rgb(225,134,8);
 }
 
 .pricing-table {
@@ -234,9 +260,15 @@ div.headline-1 h4{
     font-family: "Touche Semibold";
 }
 
+
+
 /* SECOND COLUMN DOWN BELOW */
 .attached-columns-2 {
-    border: 1px black solid;
+   
+    border-radius: 2px;
+    width: 30%;
+    padding:15px 0;
+    
 }
 
 .headline-2 {
@@ -247,29 +279,108 @@ div.headline-1 h4{
     width:60px;
     height:60px;
 }
-
+div.headline-2 h5 {
+    font-family: "Touche Bold";
+    color: #555555;
+}
 .content-2 {
     border: 1px black solid;
+    height: auto;
+    padding:10px;
 }
+
 .footer-2 {
-    border: 1px black solid;
+    border: 2px solid  rgb(254,150,2);
+    text-align: center;
+    background-color: rgb(254,150,2);
+    color: white;
+    font-family: "Touche Regular";
+    font-weight: 600;
+    border-radius: 4px;
+ 
 }
+#get-started {
+    padding-top:10px;
+    
+}
+.line-through {
+    color:rgb(191,191,191);
+}
+.dolar-sign {
+    font-size: 25px;
+    font-family: "Arial";
+    padding: 5px;
+    margin-top: 12px;
+ }
+ .money-size {
+    font-size: 60px;
+    font-family: "Touche Regular" ;
+    font-weight: 600;
+    display: flex;
+ }
+ 
+ #font-for-p {
+     font-family: "Touche Regular";
+     font-weight: 600;
+     padding-bottom: 30px;
+     margin-top: -30px;
+     color: rgb(170,170,170);
+ }
+ #most-popular {
+     color: rgb(170,170,170);
+ }
+ div.list-2 p {
+     font-family: "Touche Regular";
+     color:rgb(87,87,87);
+ }
 
 /* THIRD COLUMN DOWN BELOW */
 .attached-columns-3 {
-    border: 1px black solid;
+    
+    border-radius: 2px;
+    width: 30%;
+    padding:45px 0;  
+
 }
 
 .headline-3 {
     border: 1px black solid;
+    
+    
 }
 .img-headline-3 {
     width:70px;
     height:70px;
 }
+
 .content-3 {
     border: 1px black solid;
+    height: auto;
+    padding: 10px;
+    
 }
 .footer-3 {
-    border: 1px black solid;
+    border: 2px  solid #DEE2E6;
+    text-align:center;
+    font-family: "Touche Regular";
+    font-weight: 600;
+    border-radius: 4px;
+    
 }
+#get-started-3 {
+    
+    padding-top: 10px;
+    color: rgb(52,58,64);
+}
+div.headline-3 h5 {
+    font-family: "Touche Bold";
+    color: #555555;
+}
+
+div.list-3 p {
+    font-family: "Touche Regular";
+    color:rgb(87,87,87);
+}
+
+
+ 
