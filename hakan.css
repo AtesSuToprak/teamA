@@ -59,12 +59,12 @@ div.header-div .text-1 {
 
 .phone-image {
    
-     margin:0 auto;
+     margin:auto;
     
 }
 .device{
     width:100%;
-    height: auto;
+    height:auto;
 }
 div.clearfix p.text-info{
     color: #9A9A9A !important;
@@ -144,7 +144,7 @@ div.clearfix p.text-info{
     font-size: 14px;
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 575px){
+@media only screen and (max-width: 1199px) and (min-width: 575px){
     div.phone-image.col-sm-3{
         display:none;
     }
