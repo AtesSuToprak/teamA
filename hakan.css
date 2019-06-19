@@ -152,7 +152,124 @@ div.clearfix p.text-info{
         justify-content:center;
     }
 }
+/*ATTENTION PLEASE! Below this warning, Hakan's 2nd page starts!!*/
+/* /////// DELETE THE BORDERS UNNECESSARY !!! //////*/
+.outside-div-1 {
+    border: 1px black solid;
+    width:80%;
+    height:auto;
+    margin:auto;
+    display:flex;
+}
 
+/* FIRST COLUMN DOWN BELOW */
+.attached-columns-1 {
+    /*border: 1px black solid;*/
+}
+.headline-1 {
+    /*border: 1px black solid;*/
+}
 
+div.headline-1 h4{
+    font-family: "Touche Bold";
+    color:rgb(51,51,51);
+    line-height: 35px;
+}
+.span-best {
+    background-color: rgb(252,147,49);
+    padding:4px 0;
+    color:white;
+    font-family: "Touche Semibold";
+}
+.content-1 {
+    /*border: 1px black solid;*/
+    color:rgb(85,85,85);
+    font-family: "Touche Semibold";
+    padding-top:30px;
+}
 
+.footer-1{
+    width: 22%;
+    display:flex;
+    justify-content:space-between;
+    margin-left: 2%;
+}
+.column-1-btn {
+    border: 1px hidden;
+    border-radius: 4px;
+    background-color:rgb(254,150,2);
+    width:57px;
+    height:27px;  
+    display: flex;
+    align-items: center;
+}
+.btn-inside-btn {
+    border: 1px solid rgb(249,209,153);
+    border-radius: 4px;
+    background:white;
+    width: 45%;
+    height: 90%;
+    margin-top:1px;
+    margin-bottom:1px;
+    margin-left: 1px;
+    box-shadow:3px 0 3px rgb(225,134,8);
+}
 
+.pricing-table {
+    border: 1.2px solid rgb(254,150,2);
+    border-radius: 2px;
+    width: 120px;
+    text-align: center;
+    color:rgb(254,150,2);
+    font-family: "Touche Semibold";
+    font-size: 14px;
+    padding: 5px 0; 
+}
+.p-monthly{
+    color:rgb(51,51,51);
+    font-family: "Touche Semibold";
+}
+.p-yearly {
+    color:#AAAAAA;
+    font-family: "Touche Semibold";
+}
+
+/* SECOND COLUMN DOWN BELOW */
+.attached-columns-2 {
+    border: 1px black solid;
+}
+
+.headline-2 {
+    border: 1px black solid;
+}
+
+.img-headline-2 {
+    width:60px;
+    height:60px;
+}
+
+.content-2 {
+    border: 1px black solid;
+}
+.footer-2 {
+    border: 1px black solid;
+}
+
+/* THIRD COLUMN DOWN BELOW */
+.attached-columns-3 {
+    border: 1px black solid;
+}
+
+.headline-3 {
+    border: 1px black solid;
+}
+.img-headline-3 {
+    width:70px;
+    height:70px;
+}
+.content-3 {
+    border: 1px black solid;
+}
+.footer-3 {
+    border: 1px black solid;
+}
