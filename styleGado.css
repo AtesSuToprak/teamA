@@ -3,6 +3,17 @@
     src: url(fonts/Touche\ W03\ Bold.ttf);
     font-family: "Touche";
  }
+ @font-face {
+    src: url(fonts/Touche\ W03\ Bold.ttf);
+    font-family: "Touche Bold";
+ }      /** This is for the headlines which are a little bit thickker **/
+ 
+ @font-face {
+    src: url(fonts/Touche\ W03\ Regular.ttf);
+    font-family: "Touche Regular";
+ }
+ /** This font is for the normal texts and please add " font-weight =600; **/
+ 
 *{
     box-sizing: border-box;
     margin: 0;
@@ -158,13 +169,13 @@ div.description {
     text-align: left;
 }
 #h1-gado {
-text-align: center;
-font-weight: bolder !important;
-font-size: 30px !important;
-width:40% !important;
-border-bottom: 0px solid rgba(86, 91, 92) !important;
-padding-bottom: 15px !important;
-padding-top: 10px !important;
+    text-align: center;
+    font-weight: bolder !important;
+    font-size: 30px !important;
+    width:40% !important;
+    border-bottom: 0px solid rgba(86, 91, 92) !important;
+    padding-bottom: 15px !important;
+    padding-top: 10px !important;
  
 }
 .button-gado {
@@ -175,6 +186,8 @@ padding-top: 10px !important;
     border: #f8770d;
     padding: 10px 40px ;
     margin-top: 20px;
+    border-radius: 4px;
+    margin-bottom: 80px;
 }
 .Completed-gado {
     color: #f8770d;
@@ -183,10 +196,14 @@ padding-top: 10px !important;
     border: 1px solid #f8770d;
     margin: 0 auto;
     text-align: center;
+    border-radius: 4px;
+    margin-top: 50px;
 }
 .main-gado{
-text-align: center;
-padding-right: 150px;
-padding-left: 150px;
+    text-align: center;
+    padding-right: 150px;
+    padding-left: 150px;
+    background-image: url("images/img12.jpg");
+    width: 100%;
 }
  
