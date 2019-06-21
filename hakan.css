@@ -520,7 +520,7 @@ div.list-3 p strong {
     
 }
 
-@media only screen and (max-width:1199px) and (min-width:575px) {
+@media only screen and (max-width:1199px) and (min-width:576px) {
     div.outside-div-1{
         width: 80%;
     }
