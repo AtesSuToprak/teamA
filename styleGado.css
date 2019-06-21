@@ -150,14 +150,12 @@ div.description {
 /** Gado part **/ 
 .responsive-gado {
     margin: 1%;  
-    float: left;
-    width: 30.999%;
-    text-align: center;    
+      
 }
 .img-gado {
-  width:100%;
-  height:auto;
-}
+    width:100%;
+    height:auto;
+  }
 .Description-gado h3 {
     text-align: left;
     font-size: 19px;
@@ -206,4 +204,52 @@ div.description {
     background-image: url("images/img12.jpg");
     width: 100%;
 }
- 
+@media only screen and (max-width: 600px) {
+    
+    .button-gado {
+       font-size: 10px;
+       padding: 1em 2.6em ;
+      
+    }
+    .Completed-gado {
+        font-size: 10px;
+        width: 100px;
+        height: 20px;
+    }
+    #h1-gado {
+       font-weight: bolder !important;
+        font-size: 1.1em !important;
+        margin: 0 auto;
+       
+    }  
+    .main-gado{
+        text-align: center;
+        padding-right: 50px;
+        padding-left: 50px;
+    }  
+       
+}
+@media only screen and (max-width: 950px) and (min-width: 600px) {
+    
+    .button-gado {
+       font-size: 15px;
+       padding: 1em 2.6em ;
+      
+    }
+    .Completed-gado {
+        font-size: 12px;
+        width: 130px;
+        height: 25px;
+    }
+    #h1-gado {
+       font-weight: bolder !important;
+        font-size: 1.4em !important;
+        margin: 0 auto;
+       
+    }  
+    .main-gado{
+        text-align: center;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    }
