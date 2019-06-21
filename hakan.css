@@ -189,16 +189,15 @@ div.clearfix p.text-info{
 .attached-columns-1 {
     /*border: 1px black solid;*/
     width:40%;
-    margin-right: 15%;
+    padding: 40px;
+    padding-top:17px;
+    padding-right:100px;
 
 }
-.headline-1 {
-    /*border: 1px black solid;*/
-    padding:40px;
-}
 
-div.headline-1 h4{
+div.attached-columns-1 h4 {
     font-family: "Touche Bold";
+    font-size: 28px;
     color:rgb(51,51,51);
     line-height: 35px;
 }
@@ -209,10 +208,11 @@ div.headline-1 h4{
     font-family: "Touche Semibold";
 }
 .content-1 {
-    /*border: 1px black solid;*/
     color:rgb(85,85,85);
     font-family: "Touche Regular";
-    padding-left: 40px;
+    padding-top: 20px;
+    width: 100%;
+   
 }
 div.content-1 p {
     font-size: 14px;
@@ -222,11 +222,11 @@ div.content-1 p {
 
 }
 .footer-1{
-    width: 22%;
+    width: 300px;
     display:flex;
     justify-content:space-between;
-    margin-left: 2%;
-    padding-left: 40px;
+    margin-left: 5%;
+    padding-left: 0px;
     
 }
 
@@ -319,7 +319,7 @@ input:checked + .slider:before {
 .p-yearly {
     color:#AAAAAA;
     font-family: "Touche Semibold";
-    margin-left: 25%;
+    
 }
 /* Arrow */
 .arrow-text{
@@ -394,6 +394,7 @@ div.arrow-text p {
     border-radius: 2px;
     width: 30%;
     padding:15px 0;
+    margin-left: 6%;
     
 }
 
@@ -409,7 +410,7 @@ div.headline-2 h5 {
     border: 1px solid #DEE2E6;
     border-radius: 3px;
     height: auto;
-    padding:10px;
+    padding:20px;
     background: white;
 }
 
@@ -486,7 +487,7 @@ div.list-2 i {
     border-left: 0;
     border-radius: 3px;
     height: auto;
-    padding: 10px;
+    padding: 20px;
     background: white;   
 }
 .footer-3 {
@@ -519,5 +520,68 @@ div.list-3 p strong {
     
 }
 
+@media only screen and (max-width:1199px) and (min-width:575px) {
+    div.outside-div-1{
+        width: 80%;
+    }
+    div.attached-columns-1 { 
+        margin-left: 0;
+        
+    }
+    div.attached-columns-2{
+        margin-left: 0;
+    }
+    div.content-2 {
+        width: 100%;
+    }
+    div.content-3 {
+        width: 100%;
+    }
+    div.headline-1 h4 span.span-best {
+        color:rgb(51,51,51);
+        background:0;
+        font-family: "Touche Bold";
+    }
+    div.content-1{
+        width: 137%;
+        
+        
+    }
+    div.footer-1 p.p-yearly {
+        position:relative;
+        top:35px;
+        left: -201px;
+    }
+    div.footer-1 div.arrow-text {
+        position:relative;
+        left: -85px;
+        
+    }
+    
+    
+}
+
+@media only screen and (max-width: 575px) {
+    div.outside-div-1{
+      display: block;
+      margin:0;
+      padding-left: 0;
+    }
+    div.attached-columns-1 {
+       width: 100%;
+    }
+    div.attached-columns-2 {
+       width: 100%;
+    }
+    div.attached-columns-3 {
+        width:100%;
+        margin-left: 25px;
+    }
+    div.content-3 {
+        border-left: 1px solid #DEE2E6;
+        border-radius: 3px;
+    }
+
+}
 
  
