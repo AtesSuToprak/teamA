@@ -169,7 +169,7 @@ div.clearfix p.text-info{
 /* /////// DELETE THE BORDERS UNNECESSARY !!! //////*/
 .background-image{
     background-image: url(images/priceTable.png);
-    width: 85%;
+    width: 100%;
     height: 85%;
     padding-top: 200px;
     margin: 0 auto;
@@ -215,7 +215,7 @@ div.headline-1 h4{
     padding-left: 40px;
 }
 div.content-1 p {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 25px;
     padding-bottom: 20px;
@@ -227,47 +227,80 @@ div.content-1 p {
     justify-content:space-between;
     margin-left: 2%;
     padding-left: 40px;
+    
 }
 
-.btn-div{
+.switch-div{
     width:auto;
     height: auto;
     margin-right: 17%;
     margin-left: 30px;
     
 }
-.column-1-btn {
-    width:40%;
-    border: 1px hidden;
-    border-radius: 4px;
-    background-color:rgb(254,150,2);
-    width:57px;
-    height:27px;  
-    display: flex;
-    align-items: center;
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 53px;
+    height: 27.5px;
+  }
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+
 }
-.btn-inside-btn {
-    border: 1px solid rgb(249,209,153);
-    border-radius: 4px;
-    background:white;
-    width: 45%;
-    height: 90%;
-    margin-top:1px;
-    margin-bottom:1px;
-    margin-left: 1px;
-    box-shadow:3px 0 2px rgb(225,134,8);
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(254,150,2);
+    -webkit-transition: .4s;
+    transition: .4s;
 }
-.btn-inside-btn:hover {
-    border-color: rgb(36, 179, 59);
-    box-shadow:-2px 0 2px  rgb(42, 145, 42);
-    margin-right: 2px;
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    top: 2px;
+    left: 2px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
-.column-1-btn:hover {
-    background-color: rgb(72, 216, 72);
-    justify-content: flex-end;
+
+
+input:checked + .slider {
+    background-color: rgb(35, 211, 0);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px rgb(254,150,2);
     
-    
 }
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    box-shadow:-2px 0 2px rgb(24, 143, 0);
+}
+.slider.round {
+    border-radius: 4px;
+}
+
+.slider.round:before {
+    border-radius: 3px;
+    box-shadow:2px 0 2px rgb(211, 123, 0);
+}
+
 
 .pricing-table {
     border: 1.2px solid rgb(254,150,2);
@@ -286,6 +319,72 @@ div.content-1 p {
 .p-yearly {
     color:#AAAAAA;
     font-family: "Touche Semibold";
+    margin-left: 25%;
+}
+/* Arrow */
+.arrow-text{
+    
+    text-align: center;
+    font-size: 10px;
+    font-family: "Arial";
+    font-weight: bold;
+    color:rgb(254,150,2);
+    position:relative;
+    top:-25px;
+    left: 10px;
+}
+div.arrow-text p {
+    margin-bottom: 8px;
+}
+.arrow {
+  position: relative;
+  top: -65px;
+  left: -35px;
+  margin: 0 auto;
+  width: 100px;
+  transform:scale(-1,1) rotate(290deg); 
+  
+}
+
+.arrow .curve {
+	border: 0.5px solid #BE5F4B;
+	border-color: transparent transparent transparent rgb(254,150,2);
+	height: 55px;
+	width: 35px;
+	border-radius: 230px 0 0 150px;
+}
+
+.arrow .point {
+	position: absolute;
+	left: 6px;
+	top: 44px;
+}
+
+.arrow .point:before, .arrow .point:after {
+	border: 0.5px solid rgb(254,150,2);
+	height: 6px;
+	content: "";
+	position: absolute;
+}
+
+.arrow .point:before {
+	top: 1px;
+	left: -3px;
+	transform:rotate(-74deg);
+	-webkit-transform:rotate(-74deg);
+  -moz-transform:rotate(-74deg);
+  -ms-transform: rotate(-74deg);
+  background-color:rgb(254,150,2);
+}
+
+.arrow .point:after {
+  top: -2px;
+	left: 1px;
+	transform:rotate(12deg);
+	-webkit-transform: rotate(12deg);
+  -moz-transform:rotate(12deg);
+  -ms-transform: rotate(12deg);
+  background-color:rgb(254,150,2);
 }
 
 
